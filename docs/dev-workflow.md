@@ -20,11 +20,20 @@
 ## 4. Verify
 
 Run all required checks:
-- `make lint`
-- `make test`
-- `make typecheck`
+- `node --test`
+- `node --check server.js`
+- `node --check test/health.test.js`
+- `node --test test/health.smoke.test.js`
 
-If any command does not exist, replace with project equivalent and document it.
+CI required status checks are:
+- `test`
+- `syntax`
+- `smoke`
+
+Merge policy for `main`:
+- pull request required before merge
+- all required checks must pass
+- direct pushes are blocked by branch protection
 
 ## 5. PR
 
