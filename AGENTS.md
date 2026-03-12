@@ -14,6 +14,7 @@ Read these files before implementation:
 ## Required Behavior
 
 - Every issue must include `Goal`, `Acceptance Criteria`, and `Validation`.
+- Before marking work complete, required CI checks (`test`, `syntax`, `smoke`) must pass.
 - Do not mark work complete without passing required validation commands.
 - Keep changes aligned to the issue scope and acceptance criteria.
 
