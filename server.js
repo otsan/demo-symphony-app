@@ -4,7 +4,7 @@ function handleRequest(req, res) {
   if (req.method === 'GET' && req.url === '/health') {
     res.statusCode = 200;
     res.setHeader('content-type', 'application/json');
-    res.end('{"ok": true}');
+    res.end('{"ok": false}');
     return;
   }
 
